@@ -11,7 +11,7 @@
   <packaging>jar</packaging>
 
   <name>VapeMart</name>
-  <url>http://maven.apache.org</url>
+  <url>https://maven.apache.org</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -94,6 +94,8 @@
           <artifactId>lombok</artifactId>
           <version>1.18.24</version>
       </dependency>
+
+
 
 
   </dependencies>
