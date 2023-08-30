@@ -3,6 +3,9 @@ package com.yaga.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
+
 @Data
 @Entity
 @Table(name = "products")
@@ -22,5 +25,8 @@ public class Product {
 
     @Column(nullable = false)
     private double price;
+
+    @ManyToMany(mappedBy = "products")
+    private List<Cart> carts = new ArrayList<>();
 
 }

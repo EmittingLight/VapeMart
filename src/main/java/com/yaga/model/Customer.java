@@ -3,6 +3,7 @@ package com.yaga.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Objects;
 
 @Data
@@ -31,6 +32,9 @@ public class Customer {
     @Column
     private String address;
 
+    @OneToMany(mappedBy = "customer")
+    private List<Cart> carts;
+
     public Customer() {
     }
 
@@ -42,6 +46,4 @@ public class Customer {
         this.address = address;
         this.phoneNumber = phoneNumber;
     }
-
-
 }
