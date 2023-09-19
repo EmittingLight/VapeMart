@@ -23,7 +23,7 @@ public class Customer {
     @Column(nullable = false)
     private int age;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = true, unique = true)
     private String phoneNumber;
 
     @Column(nullable = false, unique = true)
